@@ -1,224 +1,188 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muhammad Riyash — Portfolio Resmi UTS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+     
+      body {
+        background-color: #0d1117;
+        color: #c9d1d9;
+        transition: background-color 0.3s, color 0.3s;
+      }
+      .bg-dark-custom { 
+        background-color: #161b22; 
+        transition: background-color 0.3s; 
+      }
+      .img-cover { 
+        object-fit: cover; 
+        object-position: top; 
+        height: 200px; 
+      }
 
-    body {
-      background-color: #0d1117;
-      color: #c9d1d9;
-      transition: background-color 0.3s, color 0.3s;
-    }
-    .bg-dark-custom {
-      background-color: #161b22;
-      transition: background-color 0.3s;
-    }
-    .img-cover {
-      object-fit: cover;
-      object-position: top;
-      height: 200%;
-    }
-    .from-control-custom {
-      background-color: #161b22;
-      color: #c9d1d9;
-      transition: background-color 0.3s ease;
-    }
-    .from-control-custom:focus {
-      background-color: #ffffff;
-      color: #0d1117;
-      border-color: #3a7ce0;
-      box-shadow: 0 0 0 0.2rem rgba(201, 209, 217, 0.25);
-    }
-    body-light-mode {
-      background-color: #f8f9fa;
-      color: #212529;
-    }
-    body.light-mode .bg-dark-custom,
-    body.light-mode section,
-    body.light-mode .bg-dark,
-    body.light-mode .card {
-      background-color: #f6f8fa;
-      color: #1f2328;
-      border-color: #d0d7de;
-    }
-    body.light-mode p,
-    body.light-mode h1,
-    body.light-mode h2,
-    body.light-mode h3,
-    body.light-mode h4,
-    body.light-mode h5,
-    body.light-mode li,
-    body.light-mode .text-white,
-    body.light-mode .text-secondary,
-    body.light-mode .card-title,
-    body.light-mode .card-text {
-      color: #1f2328;
-    }
-    body.light-mode .btn-outline-secondary {
-      color: #1f2328;
-      border-color: #d0d7de;
-    }
-    body.light-mode .btn-outline-secondary:hover {
-      background-color: #eaeef2;
-    }
-    body.light-mode .navbar-nav .nav-link {
-      color: #57606e;
-    }
-    body.light-mode .navbar-nav .nav-link:hover {
-      color: #1f2328;
-    }
-    body.light-mode navbar-brand {
-      color: #1f2328;
-    }
-    body.light-mode .from-control-custom {
-      background-color: #ffffff;
-      color: #212528;
-      border-color: #d0d7de;
-    }
-  </style>  
-</head>
+      .form-control-custom {
+        background-color: #161b22 !important;
+        color: #c9d1d9 !important;
+        transition: all 0.3s ease;
+      }
+      .form-control-custom:focus {
+        background-color: #ffffff !important; 
+        color: #0d1117 !important;            
+        border-color: #3a7ce0 !important;
+        box-shadow: 0 0 0 0.25rem rgba(58, 124, 224, 0.25) !important;
+      }
 
-<body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark-custom sticky-top border-primary border-opacity-25">
-    <div class="container">
-      <a class="navbar-brand" href="#">Riyash<span class="text-primary">.</span></a>
-      
-      <button class="btn btn-sm btn-outline-primary me-2 ms-auto order-lg-last" id="theme-toggle">💡 Light Mode</button>
-      
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav gap-1">
-          <li class="nav-item"><a class="nav-link text-white" href="#about-me">About</a></li>
-          <li class="nav-item"><a class="nav-link text-white-50" href="#Services">Services</a></li>
-          <li class="nav-item"><a class="nav-link text-white-50" href="#Projects">Projects</a></li>   
-          <li class="nav-item"><a class="nav-link text-white-50" href="#Skills">Skills</a></li>
-          <li class="nav-item"><a class="nav-link text-white-50" href="#Education">Education</a></li>
-          <li class="nav-item"><a class="nav-link text-white-50" href="#Experience">Experience</a></li>
-          <li class="nav-item"><a class="nav-link text-white-50" href="#Testimonials">Testimonials</a></li>
-          <li class="nav-item"><a class="nav-link text-white-50" href="#Contact">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+      body.light-mode {
+        background-color: #f8f9fa;
+        color: #212529;
+      }
+      body.light-mode .bg-dark-custom {
+        background-color: #ffffff !important;
+        border-bottom: 1px solid #dee2e6 !important;
+      }
+      body.light-mode .card {
+        background-color: #ffffff !important;
+        color: #212529 !important;
+        border-color: #dee2e6 !important;
+      }
+      body.light-mode .text-white { color: #212529 !important; }
+      body.light-mode .text-secondary { color: #495057 !important; }
+      body.light-mode .form-control-custom {
+        background-color: #ffffff !important;
+        color: #212529 !important;
+      }
+    </style>
+  </head>
 
-  <main>
-    <section id="about-me" class="py-5" style="min-height: 70vh;">
-      <div class="container-py">
-        <div class="row align-items-center g-4">
-          <div class="col-md-7 text-start">
-            <span class="text-primary">Available for work</span>
-            <p class="fs-4 mb-1 text-secondary">Hello, My name is</p>
-            <h1 class="display-4 fw-bold text-white mb-2">Riyash</h1>
-            <p class="text-white-50">Software Engineer</p>
-            <p class="text-secondary fs-5 mb-4">
-              Mahasiswa Informatika dari Universitas Internasional Semen Indonesia (UISI) yang berfokus pada pengembangan aplikasi web, manajemen basis data, serta desain grafis visual.
-            </p>
-            <div class="d-flex gap-3">
-              <a href="#Contact" class="btn btn-primary btn-lg px-4 fw-semibold">Got a Project</a>
-              <a href="#" class="btn btn-outline-secondary btn-lg px-4 text-white">My Resume</a>
-            </div>
-          </div>
-          <div class="col-md-5">
-            <img src="me.jpg" class="img-fluid rounded-circle border border-secondary p-2" style="width: 300px; height: 300px; object-fit: cover;" alt="Riyash">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="Services" class="py-5 bg-dark-custom">
-      <div class="container text-center">
-        <span class="text-primary text-uppercase fw-bold d-block mb-1">What I Do</span>
-        <h2 class="text-white display-5 fw-bold mb-5">Layanan Utama</h2>
-        <div class="row g-4 text-start">
-          <div class="col-md-4">
-            <div class="card bg-dark border border-secondary h-100">
-              <h4 class="card-title text-primary">Web Development</h4>
-              <p class="card-text text-secondary">Membangun arsitektur website yang responsif, cepat, dan mudah diakses menggunakan standar HTML, CSS, dan Bootstrap.</p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card bg-dark border border-secondary h-100">
-              <h4 class="card-title text-primary">Graphic Design</h4>
-              <p class="card-text text-secondary">Tranformasi data mentah laporan instansi pemerintah atau korporat menjadi dokumen visual yang estetis dan profesional melalui Canva.</p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card bg-dark border border-secondary h-100">
-              <h4 class="card-title text-primary">Secretarial Support</h4>
-              <p class="card-text text-secondary">Mengelola tata kelola administrasi digital, menyusun berkas laporan, standarisasi dokumen organisasi, serta manajemen surat resmi.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="Projects" class="py-5">
-      <div class="container text-center">
-        <span class="text-primary text-uppercase fw-bold d-block mb-1">Portofolio</span>
-        <h2 class="text-white display-5 fw-bold mb-5">My Project</h2>
-        <p class="text-secondary mx-auto mb-5" style="max-width: 600px;">Kumpulan karya digital dan manajemen administrasi proyek yang saya kembangkan.</p>
-        
-        <div class="row g-4 text-start">
-          <div class="col-md-4">
-            <div class="card bg-dark border-secondary h-100 text-white">
-              <img src="1.png" class="card-img-top img-cover" alt="Project 1">
-              <div class="card-body">
-                <h4 class="card-title text-white">Laporan Kegiatan DKP Jatim</h4>
-                <p class="card-text text-secondary fs-6">Optimasi layout dokumen laporan resmi menggunakan standar visualisasi instansi Dinas Kelautan dan Perikanan Jawa Timur.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card bg-dark border-secondary h-100 text-white">
-              <img src="3.png" class="card-img-top img-cover" alt="Project 2">
-              <div class="card-body">
-                <h4 class="card-title text-white">Sekretaris LKMM</h4>
-                <p class="card-text text-secondary fs-6">Penyusunan berkas administrasi kepanitiaan dan standarisasi surat menyurat resmi LKMM UISI 2026.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card bg-dark border-secondary h-100 text-white">
-              <img src="2.png" class="card-img-top img-cover" alt="Project 3">
-              <div class="card-body">
-                <h4 class="card-title text-white">Company Profile Web</h4>
-                <p class="card-text text-secondary fs-6">Pengembangan website portofolio responsif untuk pemenuhan tugas praktikum Informatika.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="Education" class="py-5">
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark-custom sticky-top border-bottom border-primary border-opacity-25">
       <div class="container">
-        <div class="text-center mb-5">
-          <span class="text-primary text-uppercase fw-bold d-block mb-1">Education</span>
-          <h2 class="text-white display-5 fw-bold">Riwayat Pendidikan</h2>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-md-9">
-            <div class="p-4 bg-dark rounded border-start border-primary border-4 text-start mb-3">            
-              <h4 class="card-title text-primary">Universitas Internasional Semen indonesia</h4>
-              <p class="card-text text-secondary">S1 Informatika | 2024 - Sekarang</p>
-              <p class="text-secondary m-0">Fokus mendalami mata kuliah inti rekayasa perangkat lunak dan manajemen basis data.</p>             
-            </div>          
-            <div class="p-4 bg-dark rounded border-start border-primary border-4 text-start">
-              <h4 class="card-title text-primary">SMK Sunan Drajat Lamongan</h4>
-              <p class="card-text text-secondary">Teknik Komputer dan Jaringan | 2021 - 2024</p>
-            </div>
-          </div>          
+        <a class="navbar-brand fw-bold text-white" href="#">Riyash<span class="text-primary">.</span></a>
+        
+        <button class="btn btn-sm btn-outline-primary me-2 ms-auto order-lg-last" id="themeToggle">☀️ Light Mode</button>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav gap-1">
+            <li class="nav-item"><a class="nav-link text-white" href="#about-me">About</a></li>
+            <li class="nav-item"><a class="nav-link text-white-50" href="#Services">Services</a></li>
+            <li class="nav-item"><a class="nav-link text-white-50" href="#Project">Project</a></li>
+            <li class="nav-item"><a class="nav-link text-white-50" href="#Skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link text-white-50" href="#Education">Education</a></li>
+            <li class="nav-item"><a class="nav-link text-white-50" href="#Experience">Experience</a></li>
+            <li class="nav-item"><a class="nav-link text-white-50" href="#Testimonials">Testimonials</a></li>
+            <li class="nav-item"><a class="nav-link text-white-50" href="#Contact">Contact</a></li>
+          </ul>
         </div>
       </div>
-    </section>
+    </nav>
 
-  </main>
-  
-  
-</body>
+    <main>
+      <section id="about-me" class="py-5" style="min-height: 70vh;">
+        <div class="container py-4">
+          <div class="row align-items-center g-4">
+            <div class="col-md-7 text-start">
+              <span class="badge bg-primary mb-3">Available for work</span>
+              <p class="fs-4 mb-1 text-secondary">Hello, My Name is</p>
+              <h1 class="display-4 fw-bold text-white mb-2">Riyash</h1>
+              <p class="h3 text-primary mb-3">Software Engineer</p>
+              <p class="text-secondary fs-5 mb-4">
+                Mahasiswa Informatika dari Universitas Internasional Semen Indonesia (UISI) yang berfokus pada pengembangan aplikasi web, manajemen basis data, serta desain grafis visual.
+              </p>
+              <div class="d-flex gap-3">
+                <a href="#Contact" class="btn btn-primary btn-lg px-4 fw-semibold">Got a Project</a>
+                <a href="#" class="btn btn-outline-secondary btn-lg px-4 text-white">My Resume</a>
+              </div>
+            </div>
+            <div class="col-md-5 text-center">
+              <img src="me.jpg" class="img-fluid rounded-circle border border-secondary p-2" style="width: 300px; height: 300px; object-fit: cover;" alt="Foto Riyash" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="Services" class="py-5 bg-dark-custom">
+        <div class="container text-center">
+          <span class="text-primary text-uppercase fw-bold d-block mb-1">What I Do</span>
+          <h2 class="text-white display-5 fw-bold mb-5">Layanan Utama</h2>
+          <div class="row g-4 text-start">
+            <div class="col-md-4">
+              <div class="p-4 bg-dark rounded border border-secondary h-100">
+                <h4 class="text-white mb-3">Web Development</h4>
+                <p class="text-secondary m-0">Membangun arsitektur website yang responsif, cepat, dan mudah diakses menggunakan standar HTML, CSS, dan Bootstrap.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="p-4 bg-dark rounded border border-secondary h-100">
+                <h4 class="text-white mb-3">Graphic Design</h4>
+                <p class="text-secondary m-0">Transformasi data mentah laporan instansi pemerintah atau korporat menjadi dokumen visual yang estetis dan profesional melalui Canva.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="p-4 bg-dark rounded border border-secondary h-100">
+                <h4 class="text-white mb-3">Secretarial Support</h4>
+                <p class="text-secondary m-0">Mengelola tata kelola administrasi digital, penyusunan berkas laporan, standarisasi dokumen organisasi, serta manajemen surat resmi.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="Project" class="py-5">
+        <div class="container text-center">
+          <span class="text-primary text-uppercase fw-bold d-block mb-1">Portfolio</span>
+          <h2 class="text-white display-5 fw-bold mb-2">My Projects</h2>
+          <p class="text-secondary mx-auto mb-5" style="max-width: 600px;">Kumpulan karya digital dan proyek akademik yang saya kembangkan.</p>
+          
+          <div class="row g-4 text-start">
+            <div class="col-md-4">
+              <div class="card bg-dark border-secondary h-100 text-white">
+                <img src="1.png" class="card-img-top img-cover" alt="Laporan DKP Jatim" />
+                <div class="card-body">
+                  <h4 class="card-title text-white">Laporan Kegiatan DKP Jatim</h4>
+                  <p class="card-text text-secondary fs-6">Optimasi layout laporan resmi menggunakan standar visual instansi pemerintah Jawa Timur.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card bg-dark border-secondary h-100 text-white">
+                <img src="2.png" class="card-img-top img-cover" alt="Event Dulux" />
+                <div class="card-body">
+                  <h4 class="card-title text-white">Company Profile Web</h4>
+                  <p class="card-text text-secondary fs-6">Pengembangan website portofolio responsif untuk pemenuhan tugas praktikum Informatika.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card bg-dark border-secondary h-100 text-white">
+                <img src="3.png" class="card-img-top img-cover" alt="Web Profile" />
+                <div class="card-body">
+                  <h4 class="card-title text-white">Administrasi LKMM 2026</h4>
+                  <p class="card-text text-secondary fs-6">Penyusunan berkas administrasi kepanitiaan dan standarisasi surat menyurat resmi Badan Eksekutif Mahasiswa (BEM).</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="Skills" class="py-5 bg-dark-custom">
+        <div class="container text-center">
+          <span class="text-primary text-uppercase fw-bold d-block mb-1">Expertise</span>
+          <h2 class="text-white display-5 fw-bold mb-5">My Skills</h2>
+          <div class="row g-4 justify-content-center">
+            <div class="col-6 col-md-3"><div class="bg-dark p-3 rounded border border-secondary text-white fw-bold">HTML & CSS</div></div>
+            <div class="col-6 col-md-3"><div class="bg-dark p-3 rounded border border-secondary text-white fw-bold">JavaScript</div></div>
+            <div class="col-6 col-md-3"><div class="bg-dark p-3 rounded border border-secondary text-white fw-bold">Canva Design</div></div>
+            <div class="col-6 col-md-3"><div class="bg-dark p-3 rounded border border-secondary text-white fw-bold">Photography</div></div>
+          </div>
+        </div>
+      </section>
+
+      
+  </body>
 </html>
