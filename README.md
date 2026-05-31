@@ -1,4 +1,4 @@
-# UTS Pemrograman Website — Company Profile Portfolio
+# UTS Pemrograman Web — Company Profile Portfolio
 
 Proyek ini dibuat untuk memenuhi Ujian Tengah Semester
 
@@ -12,8 +12,8 @@ Proyek ini dibuat untuk memenuhi Ujian Tengah Semester
 1. **Skema Warna**: Terinspirasi dari tema visual ekosistem pengembang **GitHub Dark Mode Aesthetic** (menggunakan palet warna basis `#0d1117` dan `#161b22`).
 2. **Struktur Layout & Grid**: Terinspirasi dari konsep kartu grid minimalis portofolio profesional pengembang pada platform **Dribbble & Behance**.
 3. **Modifikasi**:
-   - Judul komponen utama diarahkan rata tengah (*Centered Layout*) untuk keseimbangan visual.
-   - Penyesuaian form interaktif agar tidak memicu teks ghaib saat mengetik (efek transisi kontras tinggi).
+   - Judul komponen utama diarahkan rata tengah biar enak dilihat.
+   - Penyesuaian form interaktif agar tidak memicu teks hilang saat mengetik.
 
 <img width="1293" height="6791" alt="ss1" src="https://github.com/user-attachments/assets/199b8037-46d7-45a4-ac71-3240cefaa08e" />
 <img width="1293" height="6782" alt="ss2" src="https://github.com/user-attachments/assets/9ac634c9-a3d8-4c2b-8676-87aa2639ebd1" />
