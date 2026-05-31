@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Muhammad Riyash — Portfolio Resmi UTS</title>
+    <title>UTS Pemrograman Web</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <style>
      
@@ -35,23 +35,71 @@
       }
 
       body.light-mode {
-        background-color: #f8f9fa;
-        color: #212529;
+        background-color: #ffffff !important;
+        color: #1f2328 !important;
       }
+
+      body.light-mode section,
       body.light-mode .bg-dark-custom {
-        background-color: #ffffff !important;
-        border-bottom: 1px solid #dee2e6 !important;
+        background-color: #f6f8fa !important;
+        color: #d0d7de !important;
       }
-      body.light-mode .card {
+
+      body.light-mode .bg-dark,
+      body.light-mode .card,
+      body.light-mode .timeline-item,
+      body.light-mode .p-4.bg-dark,
+      body.light-mode .card.bg-dark {
         background-color: #ffffff !important;
-        color: #212529 !important;
-        border-color: #dee2e6 !important;
+        border: 1px solid #d0d7de !important;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05) !important;
       }
-      body.light-mode .text-white { color: #212529 !important; }
-      body.light-mode .text-secondary { color: #495057 !important; }
+
+      body.light-mode .border-start,
+      body.light-mode .border-primary {
+        border-left-color: #0969da !important;
+      }
+
+      body.light-mode h1,
+      body.light-mode h2,
+      body.light-mode h3,
+      body.light-mode h4,
+      body.light-mode h5,
+      body.light-mode p,
+      body.light-mode li,
+      body.light-mode span,
+      body.light-mode .text-white,
+      body.light-mode .text-secondary,
+      body.light-mode .card-title,
+      body.light-mode .card-text {
+        color: #1f2328 !important;
+      }
+
       body.light-mode .form-control-custom {
         background-color: #ffffff !important;
-        color: #212529 !important;
+        color: #1f2328 !important;
+        border: 1px solid #d0d7de !important;
+      }
+
+      body.light-mode .navbar-nav .nav-link,
+      body.light-mode .navbar-nav .text-white-50 {
+        color: #57606a !important;
+        font-weight: 500 !important;
+      }
+
+      body.light-mode .navbar-nav .nav-link:hover {
+        color: #0969da !important;
+      }
+
+      body.light-mode .navbar-brand,
+      body.light-mode .navbar-brand .text-white {
+        color: #1f2328 !important;
+      }
+
+      body.light-mode .badge.bg-primary,
+      body.light-mode .badge {
+        color: #ffffff !important;
+        background-color: #0969da !important;
       }
     </style>
   </head>
@@ -95,7 +143,7 @@
               </p>
               <div class="d-flex gap-3">
                 <a href="#Contact" class="btn btn-primary btn-lg px-4 fw-semibold">Got a Project</a>
-                <a href="#" class="btn btn-outline-secondary btn-lg px-4 text-white">My Resume</a>
+                <a href="My Resume.pdf" target="_blank" class="btn btn-outline-secondary btn-lg px-4 text-white">My Resume</a>
               </div>
             </div>
             <div class="col-md-5 text-center">
