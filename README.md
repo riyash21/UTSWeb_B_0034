@@ -14,3 +14,5 @@ Proyek ini dibuat untuk memenuhi Ujian Tengah Semester
 3. **Modifikasi**:
    - Judul komponen utama diarahkan rata tengah (*Centered Layout*) untuk keseimbangan visual.
    - Penyesuaian form interaktif agar tidak memicu teks ghaib saat mengetik (efek transisi kontras tinggi).
+
+<img width="1293" height="6791" alt="ss1" src="https://github.com/user-attachments/assets/199b8037-46d7-45a4-ac71-3240cefaa08e" />
