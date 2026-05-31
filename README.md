@@ -16,3 +16,5 @@ Proyek ini dibuat untuk memenuhi Ujian Tengah Semester
    - Penyesuaian form interaktif agar tidak memicu teks ghaib saat mengetik (efek transisi kontras tinggi).
 
 <img width="1293" height="6791" alt="ss1" src="https://github.com/user-attachments/assets/199b8037-46d7-45a4-ac71-3240cefaa08e" />
+<img width="1293" height="6782" alt="ss2" src="https://github.com/user-attachments/assets/9ac634c9-a3d8-4c2b-8676-87aa2639ebd1" />
+
